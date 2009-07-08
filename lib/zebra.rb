@@ -1,5 +1,4 @@
 require 'test/unit'
-require 'matchy'
 require 'parse_tree'
 require 'parse_tree_extensions'
 require 'ruby2ruby'
@@ -45,5 +44,3 @@ module Zebra
 end
 
 Test::Unit::TestCase.send(:extend, Zebra)
-Object.send(:alias_method, :to, :should)
-Object.send(:alias_method, :not_to, :should_not)
